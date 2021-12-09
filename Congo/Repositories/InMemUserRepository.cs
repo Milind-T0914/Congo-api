@@ -36,10 +36,10 @@ namespace Congo.Repositories
             return await Task.FromResult(Users);
         }
 
-        public async Task LoginUserAsync(string email, string password)
+        public async Task<User> LoginUserAsync(string email, string password)
         {
             var user = Users.Where(user => user.Email == email && user.Password == password).SingleOrDefault();
-            await Task.FromResult(user);
+            return await Task.FromResult(user);
         }
 
         public async Task RegisterUserAsync(User User)

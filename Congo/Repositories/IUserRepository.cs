@@ -10,7 +10,7 @@ namespace Congo.Repositories
     {
         Task<User> GetUserAsync(Guid Id);
         Task<IEnumerable<User>> GetUsersAsync();
-        Task LoginUserAsync(string email, string password);
+        Task<User> LoginUserAsync(string email, string password);
         Task RegisterUserAsync(User User);
         Task UpdateUserAsync(User User);
         Task DeleteUserAsync(Guid Id);
