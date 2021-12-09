@@ -30,7 +30,7 @@ namespace Congo.Controllers
         }
 
         //GET /users/{id}
-        [HttpGet("{id")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<UserDTO>> GetUserAsync(Guid Id)
         {
             var user = await repository.GetUserAsync(Id);
@@ -70,7 +70,7 @@ namespace Congo.Controllers
         }
 
         //PUT /users/{id}
-        [HttpPut("{id")]
+        [HttpPut("{id}")]
 
         public async Task<ActionResult> UpdateUserAsync(Guid id, UpdateUserDTO userDTO)
         {
