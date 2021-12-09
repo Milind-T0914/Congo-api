@@ -47,7 +47,7 @@ namespace Congo.Controllers
         {
             var user = await repository.LoginUserAsync(userDTO.Email, userDTO.Password);
 
-            if(user == null)
+            if(user is null)
             {
                 return NotFound();
             }
