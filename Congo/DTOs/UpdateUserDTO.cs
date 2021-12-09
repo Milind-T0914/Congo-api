@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Congo.DTOs
 {
-    public record RegisterUserDTO
+    public record UpdateUserDTO
     {
         [Required]
         public string Name { get; init; }
