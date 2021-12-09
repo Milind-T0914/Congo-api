@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "z+ZKCdLg19i3HOE0j6C8E4/AXm+dPD/HCH6Q5jfq4l24q+1zDok0cnwlke4hhkiR8yCdAv0p9ME6lGhBvYvvoA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\milind.mohapatra\\Documents\\DotNet Training\\capstone\\Congo\\Congo\\Congo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\milind.mohapatra\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\milind.mohapatra\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\milind.mohapatra\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\milind.mohapatra\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\milind.mohapatra\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\milind.mohapatra\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
