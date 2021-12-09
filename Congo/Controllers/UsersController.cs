@@ -29,8 +29,8 @@ namespace Congo.Controllers
             return users;
         }
 
-        //GET /users/{id}
-        [HttpGet("{id}")]
+        //GET /users/{Id}
+        [HttpGet("{Id}")]
         public async Task<ActionResult<UserDTO>> GetUserAsync(Guid Id)
         {
             var user = await repository.GetUserAsync(Id);
@@ -69,12 +69,12 @@ namespace Congo.Controllers
             return CreatedAtAction(nameof(GetUserAsync), new { id = user.Id }, user.AsDTO());
         }
 
-        //PUT /users/{id}
-        [HttpPut("{id}")]
+        //PUT /users/{Id}
+        [HttpPut("{Id}")]
 
-        public async Task<ActionResult> UpdateUserAsync(Guid id, UpdateUserDTO userDTO)
+        public async Task<ActionResult> UpdateUserAsync(Guid Id, UpdateUserDTO userDTO)
         {
-            var existingUser = await repository.GetUserAsync(id);
+            var existingUser = await repository.GetUserAsync(Id);
 
             if (existingUser is null)
             {
@@ -95,18 +95,18 @@ namespace Congo.Controllers
             return NoContent();
         }
 
-        //DELETE /users/{id}
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteUserAsync(Guid id)
+        //DELETE /users/{Id}
+        [HttpDelete("{Id}")]
+        public async Task<ActionResult> DeleteUserAsync(Guid Id)
         {
-            var existingItem = await repository.GetUserAsync(id);
+            var existingItem = await repository.GetUserAsync(Id);
 
             if (existingItem is null)
             {
                 return NotFound();
             }
 
-            await repository.DeleteUserAsync(id);
+            await repository.DeleteUserAsync(Id);
 
             return NoContent();
         }
