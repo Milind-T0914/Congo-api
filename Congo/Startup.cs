@@ -29,7 +29,7 @@ namespace Congo
         {
             services.AddSingleton<IUserRepository, InMemUserRepository>();
 
-            services.AddControllers();
+            services.AddControllers(options => { options.SuppressAsyncSuffixInActionNames = false; });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Congo", Version = "v1" });
